@@ -3,7 +3,7 @@ const navigation = document.getElementById('navigation');
 const buttons = navigation.querySelectorAll('.navigation__link');
 let selectedTimeframe = 'daily';
 
-fetch('/data.json')
+fetch('./data.json')
   .then((request) => {
     if (!request.ok) {
       return null;
